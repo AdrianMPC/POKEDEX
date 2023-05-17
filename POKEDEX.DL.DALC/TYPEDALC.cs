@@ -14,7 +14,7 @@ namespace POKEDEX.DL.DALC
             try
             {
                 SqlConnection Con = new SqlConnection(strCadenaConexion);
-                String strSP = "uspTypesListar";
+                String strSP = "uspTypeListar";
                 SqlCommand Cmd = new SqlCommand(strSP, Con);
                 Cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 List<TYPESBE> LstTYPESBE = new List<TYPESBE>();

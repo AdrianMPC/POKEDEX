@@ -33,6 +33,7 @@
             this.Agregar_but = new System.Windows.Forms.Button();
             this.Detail_but = new System.Windows.Forms.Button();
             this.Elim_but = new System.Windows.Forms.Button();
+            this.act_but = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataPokemon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +51,8 @@
             // 
             this.dataPokemon.Location = new System.Drawing.Point(41, 62);
             this.dataPokemon.Name = "dataPokemon";
+            this.dataPokemon.ReadOnly = true;
+            this.dataPokemon.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataPokemon.Size = new System.Drawing.Size(1046, 275);
             this.dataPokemon.TabIndex = 0;
             // 
@@ -61,6 +64,7 @@
             this.Agregar_but.TabIndex = 1;
             this.Agregar_but.Text = "Agregar";
             this.Agregar_but.UseVisualStyleBackColor = true;
+            this.Agregar_but.Click += new System.EventHandler(this.Agregar_but_Click);
             // 
             // Detail_but
             // 
@@ -80,12 +84,24 @@
             this.Elim_but.TabIndex = 3;
             this.Elim_but.Text = "Eliminar";
             this.Elim_but.UseVisualStyleBackColor = true;
+            this.Elim_but.Click += new System.EventHandler(this.Elim_but_Click);
+            // 
+            // act_but
+            // 
+            this.act_but.Location = new System.Drawing.Point(137, 21);
+            this.act_but.Name = "act_but";
+            this.act_but.Size = new System.Drawing.Size(75, 23);
+            this.act_but.TabIndex = 4;
+            this.act_but.Text = "Actualizar";
+            this.act_but.UseVisualStyleBackColor = true;
+            this.act_but.Click += new System.EventHandler(this.act_but_Click);
             // 
             // Pokedex_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1121, 450);
+            this.Controls.Add(this.act_but);
             this.Controls.Add(this.Elim_but);
             this.Controls.Add(this.Detail_but);
             this.Controls.Add(this.Agregar_but);
@@ -107,5 +123,6 @@
         private Button Agregar_but;
         private Button Detail_but;
         private Button Elim_but;
+        private Button act_but;
     }
 }

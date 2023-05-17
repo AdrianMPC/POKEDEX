@@ -7,7 +7,7 @@ namespace POKEDEX.BL.BE
         public string? NAME { get; set; }
         public int TYPE1 { get; set; }
         public string? TYPEs1 { get; set; }
-        public int TYPE2 { get; set; }
+        public int? TYPE2 { get; set; }
         public string? TYPEs2 { get; set; }
         public int HP { get; set; }
         public int ATTACK { get; set; }

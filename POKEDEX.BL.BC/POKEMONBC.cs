@@ -30,5 +30,57 @@ namespace POKEDEX.BL.BC
             }
 
         }
+
+        public bool PokemonEliminar(int Codigo)
+        {
+            try
+            {
+                POKEMONDALC objPokemonDALC = new POKEMONDALC();
+                return objPokemonDALC.PokemonEliminar(Codigo);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool PokemonReestablecer(int Codigo)
+        {
+            try
+            {
+                POKEMONDALC objPokemonDALC = new POKEMONDALC();
+                return objPokemonDALC.PokemonReestablecer(Codigo);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool PokemonEditar(POKEMONBE objPokemonBE)
+        {
+            try
+            {
+                POKEMONDALC objPokemonDALC = new POKEMONDALC();
+                return objPokemonDALC.PokemonEditar(objPokemonBE);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool PokemonInsertar(POKEMONBE objPokemonBE)
+        {
+            try
+            {
+                POKEMONDALC objPokemonDALC = new POKEMONDALC();
+                return objPokemonDALC.PokemonInsertar(objPokemonBE);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }
