@@ -172,7 +172,6 @@ namespace POKEDEX.UI
                     else
                     {
                         throw new Exception();
-                        MessageBox.Show("Error al crear pokemon!");
                     }
                 }
             } 
