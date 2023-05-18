@@ -74,6 +74,7 @@ namespace POKEDEX.UI
                     spd_def_text.Text = pokemonbe.SPEED_DEFENSE.ToString();
                     speed_text.Text = pokemonbe.SPEED.ToString();
                     state_box.SelectedText = pokemonbe.STATE;
+                    pictureBox1.ImageLocation = pokemonbe.IMAGE_DIR;
                 }
                 else
                 {
@@ -108,7 +109,7 @@ namespace POKEDEX.UI
                     {
                         if (string.IsNullOrEmpty(TextBx.Text))
                         {
-                            throw new Exception();
+                            throw new Exception("Rellene todos los espacios en blanco!");
                         }
                     }
                     POKEMONBC pokemonbc = new POKEMONBC();
@@ -133,7 +134,7 @@ namespace POKEDEX.UI
                     }
                     else
                     {
-                        throw new Exception();
+                        throw new Exception("Error al editar pokemon");
                     }
                 } 
                 else
@@ -145,7 +146,7 @@ namespace POKEDEX.UI
                     {
                         if (string.IsNullOrEmpty(TextBx.Text))
                         {
-                            throw new Exception();
+                            throw new Exception("Rellene todos los espacios en blanco");
                         }
                     }
 
@@ -171,13 +172,13 @@ namespace POKEDEX.UI
                     } 
                     else
                     {
-                        throw new Exception();
+                        throw new Exception("Error al agregar el pokemon");
                     }
                 }
             } 
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Algo salió mal -> " + ex.Message);
             }
         }
 
