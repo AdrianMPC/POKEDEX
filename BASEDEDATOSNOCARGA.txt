@@ -1,0 +1,3 @@
+En caso no cargué, hay un video que demuestra la mayoria de cosas (El CRUD de los tipos no esta)
+YOUTUBE: https://youtu.be/35ns_ejzvhg
+GITHUB: https://github.com/AdrianMPC/POKEDEX
