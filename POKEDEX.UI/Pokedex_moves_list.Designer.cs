@@ -42,10 +42,12 @@
             this.movesviewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.movesviewGrid.ImeMode = System.Windows.Forms.ImeMode.On;
             this.movesviewGrid.Location = new System.Drawing.Point(12, 56);
+            this.movesviewGrid.MultiSelect = false;
             this.movesviewGrid.Name = "movesviewGrid";
             this.movesviewGrid.ReadOnly = true;
             this.movesviewGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.movesviewGrid.RowTemplate.Height = 25;
+            this.movesviewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.movesviewGrid.Size = new System.Drawing.Size(621, 346);
             this.movesviewGrid.TabIndex = 0;
             // 

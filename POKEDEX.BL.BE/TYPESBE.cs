@@ -10,5 +10,6 @@ namespace POKEDEX.BL.BE
     {
         public int TYPE_ID { get; set; }
         public string? TYPE_NAME { get; set; }
+        public string? TYPE_STATE { get; set; }
     }
 }

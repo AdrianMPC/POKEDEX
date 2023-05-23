@@ -291,6 +291,7 @@
             this.state_box.Name = "state_box";
             this.state_box.Size = new System.Drawing.Size(133, 23);
             this.state_box.TabIndex = 26;
+            this.state_box.SelectedIndexChanged += new System.EventHandler(this.state_box_SelectedIndexChanged);
             // 
             // state_labe
             // 

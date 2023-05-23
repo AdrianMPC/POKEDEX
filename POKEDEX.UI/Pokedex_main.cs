@@ -83,5 +83,11 @@ namespace POKEDEX.UI
                 MessageBox.Show("El pokemon es invalido o no se pudo eliminar");
             }
         }
+
+        private void tipos_but_Click(object sender, EventArgs e)
+        {
+            Pokedex_main_types poketype = new Pokedex_main_types();
+            poketype.ShowDialog();
+        }
     }   
 }

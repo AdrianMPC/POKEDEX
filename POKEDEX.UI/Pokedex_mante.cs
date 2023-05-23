@@ -55,6 +55,11 @@ namespace POKEDEX.UI
                     POKEMONBC pokemonbc = new POKEMONBC();
                     POKEMONBE pokemonbe = pokemonbc.PokemonObtener(Userid.GetValueOrDefault());
                     type1_box.SelectedValue = pokemonbe.TYPE1;
+                    ID_TEXT.ReadOnly = true;
+                    state_box.Visible = true;
+                    state_labe.Visible = true;
+                  
+                    
 
                     if (pokemonbe.TYPE2.HasValue)
                     {
@@ -79,6 +84,9 @@ namespace POKEDEX.UI
                 else
                 {
                     EDIT_FLAG = false;
+                    ID_TEXT.ReadOnly = false;
+                    state_box.Visible = false;
+                    state_labe.Visible = false;
                     label1.Text = "Agrega tu pokemon";
                 }
             }
@@ -195,6 +203,11 @@ namespace POKEDEX.UI
         private void cancelar_but_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void state_box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

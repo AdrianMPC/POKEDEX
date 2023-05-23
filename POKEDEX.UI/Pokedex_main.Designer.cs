@@ -34,6 +34,7 @@
             this.Detail_but = new System.Windows.Forms.Button();
             this.Elim_but = new System.Windows.Forms.Button();
             this.act_but = new System.Windows.Forms.Button();
+            this.tipos_but = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataPokemon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,10 +51,12 @@
             // dataPokemon
             // 
             this.dataPokemon.Location = new System.Drawing.Point(41, 62);
+            this.dataPokemon.MultiSelect = false;
             this.dataPokemon.Name = "dataPokemon";
             this.dataPokemon.ReadOnly = true;
             this.dataPokemon.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataPokemon.Size = new System.Drawing.Size(1046, 275);
+            this.dataPokemon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataPokemon.Size = new System.Drawing.Size(1035, 275);
             this.dataPokemon.TabIndex = 0;
             // 
             // Agregar_but
@@ -96,11 +99,22 @@
             this.act_but.UseVisualStyleBackColor = true;
             this.act_but.Click += new System.EventHandler(this.act_but_Click);
             // 
+            // tipos_but
+            // 
+            this.tipos_but.Location = new System.Drawing.Point(848, 21);
+            this.tipos_but.Name = "tipos_but";
+            this.tipos_but.Size = new System.Drawing.Size(228, 23);
+            this.tipos_but.TabIndex = 5;
+            this.tipos_but.Text = "Listar tipos";
+            this.tipos_but.UseVisualStyleBackColor = true;
+            this.tipos_but.Click += new System.EventHandler(this.tipos_but_Click);
+            // 
             // Pokedex_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1121, 450);
+            this.ClientSize = new System.Drawing.Size(1121, 394);
+            this.Controls.Add(this.tipos_but);
             this.Controls.Add(this.act_but);
             this.Controls.Add(this.Elim_but);
             this.Controls.Add(this.Detail_but);
@@ -124,5 +138,6 @@
         private Button Detail_but;
         private Button Elim_but;
         private Button act_but;
+        private Button tipos_but;
     }
 }
